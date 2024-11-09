@@ -33,7 +33,11 @@
     //বাহির থেকে কাউকে কল করতে দেওয়া হবেনা তাই প্রাইভেট ফাংশান কল করা হয়েছে।
     private function require_classes(){
         require_once __DIR__.'/includes/admin-menu.php';
+        require_once __DIR__.'/includes/post-column.php';
+
        new Nazmul_Academy_Admin_Menu();
+       new Nazmul_Academy_Post_Column();
+
     }
  }
 //instance একটা কল করা হয়েছে যার কারনে এই প্লাগিন একবারই রান হবে।
